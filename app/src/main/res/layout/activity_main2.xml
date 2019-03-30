@@ -11,10 +11,39 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="20dp"
         android:text="Contador de productos"
         android:gravity="center"
         android:textSize="24sp"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="left">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario"/>
+        <TextView
+            android:id="@+id/et_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo Electronico"/>
+        <TextView
+            android:id="@+id/et_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -268,41 +297,13 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"
-        android:orientation="vertical"
-        android:gravity="left">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Usuario"/>
-        <EditText
-            android:id="@+id/et_usuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Escriba el usuario aqui"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Correo Electronico"/>
-        <EditText
-            android:id="@+id/et_correo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Escriba el correo electronico aqui"/>
-        <Button
-            android:layout_marginTop="0dp"
-            android:layout_gravity="center"
-            android:id="@+id/bt_send"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SEND"/>
-
-    </LinearLayout>
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/bt_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHARE"/>
 
 
 </LinearLayout>
